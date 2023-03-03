@@ -14,7 +14,6 @@ build/
 incoming/
 experiments/
 scripts/*.log
-lib/*
 rel/*
 doc/*
 bin/audio/
