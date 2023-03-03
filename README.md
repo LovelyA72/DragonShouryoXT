@@ -1,5 +1,9 @@
 # DragonShouryo Engine
 
+| Platform | Build Status |
+| ----------- | ----------- |
+| Windows | ![windows-status](https://github.com/LovelyA72/DragonShouryoXT/actions/workflows/msbuild.yml/badge.svg)  | 
+
 DragonShouryo is a Dragonfly-like SFML game engine for **Microsoft Windows**.
 
 **IMGD3000: Do not copy this code for your Project 2! This engine is structurally different from Dragonfly(Dragonfly games will not run). Second, you might get into trouble from Claypool if you copy my code!**
