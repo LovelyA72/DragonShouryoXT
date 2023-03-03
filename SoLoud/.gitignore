@@ -19,9 +19,6 @@ rel/*
 doc/*
 bin/audio/
 bin/
-lib/*.ilk
-lib/*.lib
-lib/*.dll
 out/
 *.pyc
 *.exp
