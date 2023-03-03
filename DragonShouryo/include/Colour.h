@@ -1,0 +1,16 @@
+#pragma once
+
+namespace dsr {
+	enum Colour {
+		UNDEFINED_COLOUR = 0x000000,
+		BLACK = 0x000000FF,
+		RED = 0xFF0000FF,
+		GREEN = 0x00FF00FF,
+		YELLOW = 0xFFFF00FF,
+		BLUE = 0x0000FFFF,
+		MAGENTA = 0xFF00FFFF,
+		CYAN = 0x00FFFFFF,
+		WHITE = 0xFFFFFFFF,
+	};
+	const Colour COLOUR_DEFAULT = WHITE;
+}

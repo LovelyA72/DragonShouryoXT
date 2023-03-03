@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="include\Event.cpp" />
+    <ClCompile Include="src\EventView.cpp" />
+    <ClCompile Include="src\GameSprite.cpp" />
+    <ClCompile Include="src\DisplayManager.cpp" />
+    <ClCompile Include="src\Box.cpp" />
+    <ClCompile Include="src\EventCollision.cpp" />
+    <ClCompile Include="src\EventKeyboard.cpp" />
+    <ClCompile Include="src\EventMouse.cpp" />
+    <ClCompile Include="src\EventOut.cpp" />
+    <ClCompile Include="src\EventStep.cpp" />
+    <ClCompile Include="src\Frame.cpp" />
+    <ClCompile Include="src\GameClock.cpp" />
+    <ClCompile Include="src\GameManager.cpp" />
+    <ClCompile Include="src\Hud.cpp" />
+    <ClCompile Include="src\InputManager.cpp" />
+    <ClCompile Include="src\LogManager.cpp" />
+    <ClCompile Include="src\Manager.cpp" />
+    <ClCompile Include="src\DsrObject.cpp" />
+    <ClCompile Include="src\Music.cpp" />
+    <ClCompile Include="src\ObjectList.cpp" />
+    <ClCompile Include="src\ObjectListIterator.cpp" />
+    <ClCompile Include="src\ResourceManager.cpp" />
+    <ClCompile Include="src\Sound.cpp" />
+    <ClCompile Include="src\SynthManager.cpp" />
+    <ClCompile Include="src\Vector2D.cpp" />
+    <ClCompile Include="src\WorldManager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\EventView.h" />
+    <ClInclude Include="include\GameSprite.h" />
+    <ClInclude Include="include\Colour.h" />
+    <ClInclude Include="include\DisplayManager.h" />
+    <ClInclude Include="include\DragonShouryo.h" />
+    <ClInclude Include="include\Box.h" />
+    <ClInclude Include="include\Event.h" />
+    <ClInclude Include="include\EventCollision.h" />
+    <ClInclude Include="include\EventKeyboard.h" />
+    <ClInclude Include="include\EventMouse.h" />
+    <ClInclude Include="include\EventOut.h" />
+    <ClInclude Include="include\EventStep.h" />
+    <ClInclude Include="include\Frame.h" />
+    <ClInclude Include="include\GameClock.h" />
+    <ClInclude Include="include\GameManager.h" />
+    <ClInclude Include="include\Hud.h" />
+    <ClInclude Include="include\InputManager.h" />
+    <ClInclude Include="include\LogManager.h" />
+    <ClInclude Include="include\Manager.h" />
+    <ClInclude Include="include\DsrObject.h" />
+    <ClInclude Include="include\Music.h" />
+    <ClInclude Include="include\ObjectList.h" />
+    <ClInclude Include="include\ObjectListIterator.h" />
+    <ClInclude Include="include\ResourceManager.h" />
+    <ClInclude Include="include\Sound.h" />
+    <ClInclude Include="include\SynthManager.h" />
+    <ClInclude Include="include\Vector2D.h" />
+    <ClInclude Include="include\WorldManager.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="resource1.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="DragonShouryo.rc" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{130e281b-9cc2-4f8f-86fd-3454c273a11f}</ProjectGuid>
+    <RootNamespace>DragonShouryo</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <EnableASAN>false</EnableASAN>
+    <EnableFuzzer>false</EnableFuzzer>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <TargetName>DSRPlayer-d</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <TargetName>DSRPlayer</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>.\include\;..\SFML\include;..\SoLoud\include;..\EmuSound\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\SFML\lib;..\SoLoud\lib;..\EmuSound\lib\release\static;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>soloud_static.lib;Winmm.lib;ws2_32.lib;Shlwapi.lib;sfml-main-d.lib;sfml-graphics-d.lib;sfml-window-d.lib;sfml-system-d.lib;emusound.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>mkdir ..\DSRPlayer\$(ConfigurationName)\
+mkdir ..\DSRPlayer\$(ConfigurationName)\bin
+mkdir ..\DSRPlayer\$(ConfigurationName)\lib
+
+cp $(TargetPath) ..\DSRPlayer\$(ConfigurationName)\bin
+cp -r ..\DragonShouryo\include\  ..\DSRPlayer\$(ConfigurationName)\ 
+cp $(TargetDir)\DSRPlayer-d.lib ..\DSRPlayer\$(ConfigurationName)\lib
+cp $(TargetDir)\DSRPlayer-d.pdb ..\DSRPlayer\$(ConfigurationName)\lib
+cp $(TargetDir)\DSRPlayer-d.exp ..\DSRPlayer\$(ConfigurationName)\lib</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>.\src\;.\include\;..\SFML\include;..\SoLoud\include;..\EmuSound\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>MinSpace</Optimization>
+      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\SFML\lib;..\SoLoud\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>soloud_static.lib;Winmm.lib;ws2_32.lib;Shlwapi.lib;sfml-main.lib;sfml-graphics.lib;sfml-window.lib;sfml-system.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>mkdir ..\DSRPlayer\$(ConfigurationName)\
+mkdir ..\DSRPlayer\$(ConfigurationName)\bin
+mkdir ..\DSRPlayer\$(ConfigurationName)\lib
+
+cp $(TargetPath) ..\DSRPlayer\$(ConfigurationName)\bin
+cp -r ..\DragonShouryo\include\  ..\DSRPlayer\$(ConfigurationName)\ 
+cp $(TargetDir)\DSRPlayer.lib ..\DSRPlayer\$(ConfigurationName)\lib
+cp $(TargetDir)\DSRPlayer.pdb ..\DSRPlayer\$(ConfigurationName)\lib
+cp $(TargetDir)\DSRPlayer.exp ..\DSRPlayer\$(ConfigurationName)\lib</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
