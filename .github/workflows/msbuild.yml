@@ -46,16 +46,6 @@ jobs:
         # Base path for archive files
         path: ${{env.SOLUTION_FILE_PATH}}/DSRPlayer/Debug/
       
-    - name: Zip Release
-      # You may pin to the exact commit or the version.
-      # uses: TheDoctor0/zip-release@a24011d8d445e4da5935a7e73c1f98e22a439464
-      uses: TheDoctor0/zip-release@0.7.1
-      with:
-        # Filename for archive
-        filename: DSRPlayer-release-win64.zip
-        # Base path for archive files
-        path: ${{env.SOLUTION_FILE_PATH}}/DSRPlayer/Release/
-        
     - name: Build all
       working-directory: ${{env.GITHUB_WORKSPACE}}
       # Add additional options to the MSBuild command line here (like platform or verbosity level).
@@ -69,11 +59,4 @@ jobs:
         name: Win64-debug
         # A file, directory or wildcard pattern that describes what to upload
         path: DSRPlayer-debug-win64.tar.gz
-        
-    - name: Upload release artifact
-      uses: actions/upload-artifact@v3.1.2
-      with:
-        # Artifact name
-        name: Win64-Release
-        # A file, directory or wildcard pattern that describes what to upload
-        path: DSRPlayer-release-win64.tar.gz
+
