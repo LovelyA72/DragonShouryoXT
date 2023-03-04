@@ -44,7 +44,7 @@ jobs:
         # Filename for archive
         filename: DSRPlayer-debug-win64.zip
         # Base path for archive files
-        path: ${{env.GITHUB_WORKSPACE}}/DSRPlayer/Debug/
+        path: ${{env.SOLUTION_FILE_PATH}}/DSRPlayer/Debug/
       
     - name: Zip Release
       # You may pin to the exact commit or the version.
@@ -54,7 +54,7 @@ jobs:
         # Filename for archive
         filename: DSRPlayer-release-win64.zip
         # Base path for archive files
-        path: ${{env.GITHUB_WORKSPACE}}/DSRPlayer/Release/
+        path: ${{env.SOLUTION_FILE_PATH}}/DSRPlayer/Release/
         
     - name: Build all
       working-directory: ${{env.GITHUB_WORKSPACE}}
