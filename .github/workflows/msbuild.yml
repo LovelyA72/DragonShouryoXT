@@ -35,15 +35,7 @@ jobs:
     - name: Build lib
       working-directory: ${{env.GITHUB_WORKSPACE}}
       run: msbuild /m /p:Configuration=${{env.BUILD_CONFIGURATION}} ${{env.SOLUTION_FILE_PATH}} /t:DragonShouryo
-    - name: Zip Release
-      # You may pin to the exact commit or the version.
-      # uses: TheDoctor0/zip-release@a24011d8d445e4da5935a7e73c1f98e22a439464
-      uses: TheDoctor0/zip-release@0.7.1
-      with:
-        # Filename for archive
-        filename: DSRPlayer-release-win64.zip
-        # Base path for archive files
-        path: D:/a/DragonShouryoXT/DragonShouryoXT/DSRPlayer/Release/
+      
     - name: Zip Debug
       # You may pin to the exact commit or the version.
       # uses: TheDoctor0/zip-release@a24011d8d445e4da5935a7e73c1f98e22a439464
@@ -52,7 +44,17 @@ jobs:
         # Filename for archive
         filename: DSRPlayer-debug-win64.zip
         # Base path for archive files
-        path: D:/a/DragonShouryoXT/DragonShouryoXT/DSRPlayer/Debug/
+        path: ${{env.GITHUB_WORKSPACE}}/DSRPlayer/Debug/
+      
+    - name: Zip Release
+      # You may pin to the exact commit or the version.
+      # uses: TheDoctor0/zip-release@a24011d8d445e4da5935a7e73c1f98e22a439464
+      uses: TheDoctor0/zip-release@0.7.1
+      with:
+        # Filename for archive
+        filename: DSRPlayer-release-win64.zip
+        # Base path for archive files
+        path: ${{env.GITHUB_WORKSPACE}}/DSRPlayer/Release/
         
     - name: Build all
       working-directory: ${{env.GITHUB_WORKSPACE}}
