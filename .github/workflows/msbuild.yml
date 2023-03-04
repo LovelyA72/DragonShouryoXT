@@ -58,5 +58,5 @@ jobs:
         # Artifact name
         name: Win64-debug
         # A file, directory or wildcard pattern that describes what to upload
-        path: DSRPlayer-debug-win64.tar.gz
+        path: DSRPlayer-debug-win64.zip
 
