@@ -38,11 +38,11 @@ jobs:
     
     - name: Compress debug lib
       working-directory: ${{env.GITHUB_WORKSPACE}}
-      run: tar -xzvf ${{env.GITHUB_WORKSPACE}}/DSRPlayer-debug-win64.tar.gz -C ${{env.GITHUB_WORKSPACE}}/DSRPlayer/Debug/
+      run: tar -czvf DSRPlayer-debug-win64.tar.gz -C ${{env.GITHUB_WORKSPACE}}/DSRPlayer/Debug/
       
     - name: Compress release lib
       working-directory: ${{env.GITHUB_WORKSPACE}}
-      run: tar -xzvf ${{env.GITHUB_WORKSPACE}}/DSRPlayer-release-win64.tar.gz -C ${{env.GITHUB_WORKSPACE}}/DSRPlayer/Release/
+      run: tar -czvf DSRPlayer-release-win64.tar.gz -C ${{env.GITHUB_WORKSPACE}}/DSRPlayer/Release/
 
     - name: Build all
       working-directory: ${{env.GITHUB_WORKSPACE}}
