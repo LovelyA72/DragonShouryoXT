@@ -6,7 +6,7 @@
 
 DragonShouryo is a Dragonfly-like SFML game engine for **Microsoft Windows**.
 
-**IMGD3000: Do not copy this code for your Project 2! This engine is structurally different from Dragonfly(Dragonfly games will not run). Second, you might get into trouble from Claypool if you copy my code!**
+**IMGD3000: Do not copy this code for your Project 2! This engine is structurally different from Dragonfly(Dragonfly games will not run). Second, you might get into trouble with Claypool if you copy my code!**
 
 **IMGD3000学生请注意，请不要将本引擎的源代码用于你的Project 2**
 
